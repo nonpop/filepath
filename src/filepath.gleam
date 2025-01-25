@@ -18,6 +18,7 @@ import gleam/option.{type Option, None, Some}
 
 @external(erlang, "filepath_ffi", "is_windows")
 @external(javascript, "./filepath_ffi.mjs", "is_windows")
+@external(go, "", "isWindows")
 fn is_windows() -> Bool
 
 /// Join two paths together.
